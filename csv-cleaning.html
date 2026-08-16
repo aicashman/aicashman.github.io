@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSV &amp; Excel Data Cleaning — CASHMAN</title>
+<meta name="description" content="I clean, dedupe and format your CSV or Excel contact list — fast — and give you a reusable script so it stays clean.">
+<style>
+  :root{--bg:#0b0f14;--card:#141b24;--ink:#e8eef5;--muted:#9fb0c3;--accent:#3ddc84;--accent2:#4aa3ff;--line:#22303d}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px}
+  .top{padding:24px 0}
+  .top a{color:var(--muted);text-decoration:none;font-size:14px}
+  header{padding:20px 0 30px}
+  h1{font-size:clamp(26px,4.5vw,38px);margin:8px 0}
+  .sub{color:var(--muted);font-size:18px}
+  h2{font-size:22px;margin:34px 0 12px}
+  ul.checks{list-style:none;padding:0;margin:0}
+  ul.checks li{padding:8px 0;border-bottom:1px solid var(--line)}
+  .tiers{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:16px 0}
+  @media(max-width:720px){.tiers{grid-template-columns:1fr}}
+  .tier{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .tier.pop{border-color:var(--accent)}
+  .tier h3{margin:0 0 4px}
+  .tier .p{font-size:26px;font-weight:700;margin:4px 0 12px}
+  .tier .badge{font-size:11px;color:var(--accent);letter-spacing:1px;text-transform:uppercase}
+  .tier ul{padding-left:18px;margin:0;color:var(--muted);font-size:14px}
+  .cta{background:var(--card);border:1px solid var(--accent);border-radius:16px;padding:26px;margin:36px 0;text-align:center}
+  .cta h2{margin-top:0}
+  .btn{display:inline-block;text-decoration:none;font-weight:600;padding:14px 26px;border-radius:10px;background:var(--accent);color:#062012;font-size:17px}
+  .muted{color:var(--muted)}
+  footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 60px;text-align:center;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap top"><a href="index.html">← CASHMAN home</a></div>
+<header class="wrap">
+  <div class="muted" style="letter-spacing:2px;text-transform:uppercase;font-size:12px">Data Cleaning Service</div>
+  <h1>I'll clean, dedupe &amp; format your CSV or Excel list — fast.</h1>
+  <p class="sub">And I'll hand you a reusable script tuned to your columns, so next month's export cleans itself. No subscriptions, no jargon.</p>
+</header>
+
+<main class="wrap">
+  <h2>What I fix in your file</h2>
+  <ul class="checks">
+    <li>✅ Remove duplicate rows (you choose what counts as a duplicate)</li>
+    <li>✅ Delete blank/empty rows &amp; trim stray spaces everywhere</li>
+    <li>✅ Fix casing — Proper Names, UPPER state codes, lowercase emails</li>
+    <li>✅ Standardize phone numbers to one clean format</li>
+    <li>✅ Standardize all dates to one format (e.g. 2023-01-15)</li>
+    <li>✅ Flag broken emails, bad phones &amp; unparseable dates</li>
+    <li>✅ Split or merge columns (full name → first / last)</li>
+  </ul>
+
+  <h2>Pricing</h2>
+  <div class="tiers">
+    <div class="tier">
+      <span class="badge">Basic</span>
+      <div class="p">$15</div>
+      <ul>
+        <li>1 file, up to 1,000 rows</li>
+        <li>Dedupe, trim, casing, empty-row removal</li>
+        <li>Standardize one field type</li>
+        <li>Cleaned CSV + change report</li>
+        <li>24-hour turnaround</li>
+      </ul>
+    </div>
+    <div class="tier pop">
+      <span class="badge">Standard · Most popular</span>
+      <div class="p">$35</div>
+      <ul>
+        <li>1 file, up to 10,000 rows (CSV/Excel)</li>
+        <li>Standardize all field types</li>
+        <li>Error-flagging column</li>
+        <li>Split/merge columns on request</li>
+        <li><strong>Reusable Python script you keep</strong></li>
+        <li>2-day turnaround</li>
+      </ul>
+    </div>
+    <div class="tier">
+      <span class="badge">Premium</span>
+      <div class="p">$75</div>
+      <ul>
+        <li>Up to 3 files / 50,000 rows</li>
+        <li>CSV + Excel (.xlsx) output</li>
+        <li>Custom cleaning rules to your spec</li>
+        <li>Merge &amp; de-dupe across files</li>
+        <li>Excel summary tab</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h2>Send your file for a free quote</h2>
+    <p class="muted">Message me your file and the format you need. I'll confirm scope and turn it around fast — most jobs same-day or next-day.</p>
+    <a class="btn" id="contact" href="#">Get a free quote →</a>
+    <p class="muted" style="margin-top:14px;font-size:13px">Perfect for real-estate agents, e-commerce sellers &amp; agencies prepping lists for Mailchimp, HubSpot, Shopify or a CRM import.</p>
+  </div>
+</main>
+
+<footer class="wrap">© 2026 CASHMAN · <a href="index.html" style="color:var(--accent2)">Home</a></footer>
+</body>
+</html>
